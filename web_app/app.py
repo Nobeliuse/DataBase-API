@@ -5,7 +5,7 @@ from db_api import api
 
 @app.route('/')
 def home_page():
-    return render_template('index.html', devices=devices, batteries=batteries)
+    return render_template('index.html')
 
 
 @app.route('/devices/<int:device_id>', methods=['GET'])
